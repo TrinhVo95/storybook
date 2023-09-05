@@ -1,0 +1,57 @@
+import { Canvas, Meta, Story, Controls } from "@storybook/blocks";
+import * as GroupButtonStories from "./GroupButton.stories";
+
+<Meta of={GroupButtonStories} />
+
+<style>
+  {`
+li,a {
+  color: #1f76c2!important;
+  font-size: 20px!important;
+}
+
+
+`}
+</style>
+
+# Button Group
+
+- [Usage](#usage)
+- [Overview](#overview)
+- [Props](#props)
+
+## Usage
+
+Before using ButtonGroup, you need to install @dgtx/button package and import it:
+
+```typescript
+import { ButtonGroup } from "@dgtx/button";
+```
+
+## Overview
+
+Button group can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+
+<Canvas>
+  <Story
+    of={GroupButtonStories.BtnGroupDefault}
+    meta={GroupButtonStories}
+
+/>
+
+</Canvas>
+
+## Props
+
+<Controls of={GroupButtonStories.BtnGroupDefault} />
+
+# Vertical
+
+<Canvas>
+  <Story
+    of={GroupButtonStories.BtnGroupVer}
+    meta={GroupButtonStories}
+
+/>
+
+</Canvas>

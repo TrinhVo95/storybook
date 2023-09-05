@@ -1,0 +1,74 @@
+import { Canvas, Meta, Story, Controls } from "@storybook/blocks";
+
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+<style>
+  {`
+li,a {
+  color: #1f76c2!important;
+  font-size: 20px!important;
+}
+
+
+`}
+</style>
+
+# Button
+
+- [Usage](#usage)
+- [Overview](#overview)
+- [Props](#props)
+
+## Usage
+
+Before using Button, you need to install @dgtx/button package and import it:
+
+```typescript
+import { Button } from "@dgtx/button";
+```
+
+## Overview
+
+Buttons allow users to trigger an action or event with a single click. For example, you can use a button for allowing the functionality of submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+
+<Canvas>
+
+<Story of={ButtonStories.Overview} meta={ButtonStories} />
+
+</Canvas>
+
+## Props
+
+<Controls of={ButtonStories.Overview} />
+
+## Button kinds
+
+<Canvas>
+
+  <Story
+    of={ButtonStories.ButtonType}
+    meta={ButtonStories}
+
+/>
+
+</Canvas>
+
+## Sizes
+
+<Canvas>
+  <Story of={ButtonStories.ButtonSizes} meta={ButtonStories} />
+</Canvas>
+
+## Disabled
+
+<Canvas>
+  <Story of={ButtonStories.ButtonDisabled} meta={ButtonStories} />
+</Canvas>
+
+## Active
+
+<Canvas>
+  <Story of={ButtonStories.ButtonActive} meta={ButtonStories} />
+</Canvas>

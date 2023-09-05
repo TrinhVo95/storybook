@@ -1,0 +1,71 @@
+import { Canvas, Meta, Story, Controls } from "@storybook/blocks";
+import * as IconButtonStories from "./IconButton.stories";
+
+<Meta of={IconButtonStories} />;
+
+<style>
+  {`
+li,a {
+  color: #1f76c2!important;
+  font-size: 20px!important;
+}
+
+
+`}
+</style>
+
+# IconButton
+
+- [Usage](#usage)
+- [Overview](#overview)
+- [Props](#props)
+
+## Usage
+
+Before using IconButton, you need to install @dgtx/button package and import it:
+
+```typescript
+import { IconButton } from "@dgtx/button";
+```
+
+## Overview
+
+Icon button contains only icon.
+
+<Canvas>
+
+  <Story 
+    of={IconButtonStories.IconBtn}
+    meta={IconButtonStories}
+
+/>
+
+</Canvas>
+
+## Props
+
+<Controls of={IconButtonStories.IconBtn} />
+
+# Disabled
+
+<Canvas>
+
+  <Story
+    of={IconButtonStories.DisabledIcon}
+    meta={IconButtonStories}
+
+/>
+
+</Canvas>
+
+# Active
+
+<Canvas>
+
+  <Story
+    of={IconButtonStories.ActiveIcon}
+    meta={IconButtonStories}
+
+/>
+
+</Canvas>
